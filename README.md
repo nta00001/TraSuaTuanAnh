@@ -22,6 +22,18 @@ Dự án gồm hai phần:
 | **DotsIndicator**         | Indicator dạng chấm dưới ViewPager2 |
 | **AndroidX Security**     | Mã hóa dữ liệu nhạy cảm |
 | **ViewBinding / DataBinding** | Kết nối UI & dữ liệu |
+| **LiveData / StateFlow**  | Quản lý trạng thái dữ liệu một cách phản ứng (lifecycle-aware) |
+
+### 🏗️ Kiến trúc ứng dụng
+
+Ứng dụng sử dụng mô hình **MVP (Model - View - Presenter)**:
+
+- **Model**: quản lý dữ liệu & xử lý nghiệp vụ (Firebase, API, DB)
+- **View**: Fragment/Activity chỉ hiển thị dữ liệu, không xử lý logic
+- **Presenter**: trung gian điều phối, xử lý logic và gọi đến Model
+
+> Kết hợp với `LiveData` và `StateFlow` để cập nhật dữ liệu UI một cách tự động, hiện đại và dễ test.
+
 
 ### ⚙️ Cấu hình hệ thống
 
