@@ -1,1 +1,60 @@
-# Kotlin-Android-Web-Api-Net-5
+# 🍹 Kotlin Android + Web API (.NET 5) – Ứng dụng Mua Sắm Trà Sữa
+
+Dự án gồm hai phần:
+- 📱 **Ứng dụng Android** viết bằng Kotlin
+- 🌐 **Backend Web API** viết bằng ASP.NET Core (.NET 5)
+
+---
+
+## 📱 Android App – `TraSuaHoangHai`
+
+### 🔧 Công nghệ & Thư viện chính
+
+| Công nghệ                 | Mô tả |
+|---------------------------|------|
+| **Ngôn ngữ**              | Kotlin |
+| **Firebase**              | Auth, Realtime Database, Firestore, Analytics |
+| **Retrofit2 + GSON**      | Giao tiếp REST API, parse JSON |
+| **Glide**                 | Tải & hiển thị ảnh từ URL |
+| **Google Maps SDK**       | Hiển thị bản đồ, định vị |
+| **ZXing**                 | Quét mã QR / Barcode |
+| **MPAndroidChart**        | Hiển thị biểu đồ thống kê |
+| **DotsIndicator**         | Indicator dạng chấm dưới ViewPager2 |
+| **AndroidX Security**     | Mã hóa dữ liệu nhạy cảm |
+| **ViewBinding / DataBinding** | Kết nối UI & dữ liệu |
+
+### ⚙️ Cấu hình hệ thống
+
+- `minSdk`: 24  
+- `targetSdk`: 33  
+- `compileSdk`: 33  
+- Dùng `kotlin-parcelize` để truyền object qua `Intent`
+
+---
+
+## 🌐 Web API – `WebAPIShoping`
+
+### 🔧 Công nghệ sử dụng
+
+| Thành phần                     | Mô tả |
+|--------------------------------|------|
+| **ASP.NET Core Web API (.NET 5)** | Backend RESTful |
+| **Entity Framework Core + MySQL** | ORM truy cập cơ sở dữ liệu |
+| **JWT Authentication**        | Xác thực người dùng qua token |
+| **Swagger (Swashbuckle)**     | Tài liệu & giao diện test API |
+| **Ngrok**                     | Expose API ra Internet để test |
+| **Service / Repository Pattern** | Tách biệt logic, dễ test & mở rộng |
+
+### 🔩 Thành phần chính
+
+- `Startup.cs` – Cấu hình JWT, DI, Swagger, DbContext
+- `Program.cs` – Khởi động server + ngrok
+- `appsettings.json` – Cấu hình DB, JWT, môi trường
+
+---
+
+## 🚀 Hướng dẫn chạy
+
+### 1. Clone dự án
+```bash
+git clone https://github.com/HoangHai00/Kotlin-Android-Web-Api-Net-5.git
