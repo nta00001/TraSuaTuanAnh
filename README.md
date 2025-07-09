@@ -6,7 +6,7 @@ Dự án gồm hai phần:
 
 ---
 
-## 📱 Android App – `TraSuaHoangHai`
+## 📱 Android App – `TraSuaTuanAnh`
 
 ### 🔧 Công nghệ & Thư viện chính
 
