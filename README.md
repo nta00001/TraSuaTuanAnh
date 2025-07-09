@@ -69,4 +69,4 @@ Dự án gồm hai phần:
 
 ### 1. Clone dự án
 ```bash
-git clone https://github.com/HoangHai00/Kotlin-Android-Web-Api-Net-5.git
+git clone https://github.com/nta00001/TraSuaTuanAnh
